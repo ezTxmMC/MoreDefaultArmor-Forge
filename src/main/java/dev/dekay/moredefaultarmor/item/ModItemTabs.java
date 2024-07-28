@@ -25,6 +25,31 @@ public class ModItemTabs {
                     output.accept(MoreDefaultArmor.getItems().getOakChestplate().get());
                     output.accept(MoreDefaultArmor.getItems().getOakLeggings().get());
                     output.accept(MoreDefaultArmor.getItems().getOakBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getAndesiteHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getAndesiteChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getAndesiteLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getAndesiteBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getCobblestoneHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getCobblestoneChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getCobblestoneLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getCobblestoneBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getDioriteHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getDioriteChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getDioriteLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getDioriteBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getDirtHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getDirtChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getDirtLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getDirtBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getGraniteHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getGraniteChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getGraniteLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getGraniteBoots().get());
                 }).build()
         );
         this.nether = CREATIVE_MODE_TABS.register("nether_tab", () -> CreativeModeTab.builder()
