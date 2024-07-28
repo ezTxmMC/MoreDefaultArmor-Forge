@@ -1,7 +1,6 @@
 package dev.dekay.moredefaultarmor.item;
 
 import dev.dekay.moredefaultarmor.MoreDefaultArmor;
-import lombok.Getter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -10,7 +9,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
-@Getter
 public class ModItemTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MoreDefaultArmor.MODID);
 
@@ -33,10 +31,10 @@ public class ModItemTabs {
                 .title(Component.translatable("itemGroup.moredefaultarmor.nether"))
                 .icon(Items.BARRIER::getDefaultInstance)
                 .displayItems((parameters, output) -> {
-                    output.accept(MoreDefaultArmor.getItems().getNetherrackHelmet.get());
-                    output.accept(MoreDefaultArmor.getItems().getNetherrackChestplate.get());
-                    output.accept(MoreDefaultArmor.getItems().getNetherrackLeggings.get());
-                    output.accept(MoreDefaultArmor.getItems().getNetherrackBoots.get);
+                    output.accept(MoreDefaultArmor.getItems().getNetherrackHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherrackChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherrackLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherrackBoots().get());
                 }).build()
         );
         this.end = CREATIVE_MODE_TABS.register("end_tab", () -> CreativeModeTab.builder()
@@ -47,5 +45,17 @@ public class ModItemTabs {
                 }).build()
         );
         CREATIVE_MODE_TABS.register(eventBus);
+    }
+
+    public RegistryObject<CreativeModeTab> getOverworld() {
+        return overworld;
+    }
+
+    public RegistryObject<CreativeModeTab> getNether() {
+        return nether;
+    }
+
+    public RegistryObject<CreativeModeTab> getEnd() {
+        return end;
     }
 }

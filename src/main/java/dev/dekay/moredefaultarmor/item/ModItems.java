@@ -2,7 +2,6 @@ package dev.dekay.moredefaultarmor.item;
 
 import dev.dekay.moredefaultarmor.MoreDefaultArmor;
 import dev.dekay.moredefaultarmor.armor.ModArmorTiers;
-import lombok.Getter;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -10,7 +9,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-@Getter
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoreDefaultArmor.MODID);
 
@@ -94,5 +92,133 @@ public class ModItems {
         this.netherrackBoots = ITEMS.register("netherrack_boots", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.BOOTS, new Item.Properties()));
 
         ITEMS.register(eventBus);
+    }
+
+    public RegistryObject<Item> getDirtHelmet() {
+        return dirtHelmet;
+    }
+
+    public RegistryObject<Item> getDirtChestplate() {
+        return dirtChestplate;
+    }
+
+    public RegistryObject<Item> getDirtLeggings() {
+        return dirtLeggings;
+    }
+
+    public RegistryObject<Item> getDirtBoots() {
+        return dirtBoots;
+    }
+
+    public RegistryObject<Item> getOakHelmet() {
+        return oakHelmet;
+    }
+
+    public RegistryObject<Item> getOakChestplate() {
+        return oakChestplate;
+    }
+
+    public RegistryObject<Item> getOakLeggings() {
+        return oakLeggings;
+    }
+
+    public RegistryObject<Item> getOakBoots() {
+        return oakBoots;
+    }
+
+    public RegistryObject<Item> getCobblestoneHelmet() {
+        return cobblestoneHelmet;
+    }
+
+    public RegistryObject<Item> getCobblestoneChestplate() {
+        return cobblestoneChestplate;
+    }
+
+    public RegistryObject<Item> getCobblestoneLeggings() {
+        return cobblestoneLeggings;
+    }
+
+    public RegistryObject<Item> getCobblestoneBoots() {
+        return cobblestoneBoots;
+    }
+
+    public RegistryObject<Item> getAndesiteHelmet() {
+        return andesiteHelmet;
+    }
+
+    public RegistryObject<Item> getAndesiteChestplate() {
+        return andesiteChestplate;
+    }
+
+    public RegistryObject<Item> getAndesiteLeggings() {
+        return andesiteLeggings;
+    }
+
+    public RegistryObject<Item> getAndesiteBoots() {
+        return andesiteBoots;
+    }
+
+    public RegistryObject<Item> getDioriteHelmet() {
+        return dioriteHelmet;
+    }
+
+    public RegistryObject<Item> getDioriteChestplate() {
+        return dioriteChestplate;
+    }
+
+    public RegistryObject<Item> getDioriteLeggings() {
+        return dioriteLeggings;
+    }
+
+    public RegistryObject<Item> getDioriteBoots() {
+        return dioriteBoots;
+    }
+
+    public RegistryObject<Item> getGraniteHelmet() {
+        return graniteHelmet;
+    }
+
+    public RegistryObject<Item> getGraniteChestplate() {
+        return graniteChestplate;
+    }
+
+    public RegistryObject<Item> getGraniteLeggings() {
+        return graniteLeggings;
+    }
+
+    public RegistryObject<Item> getGraniteBoots() {
+        return graniteBoots;
+    }
+
+    public RegistryObject<Item> getDeepslateCobbleHelmet() {
+        return deepslateCobbleHelmet;
+    }
+
+    public RegistryObject<Item> getDeepslateCobbleChestplate() {
+        return deepslateCobbleChestplate;
+    }
+
+    public RegistryObject<Item> getDeepslateCobbleLeggings() {
+        return deepslateCobbleLeggings;
+    }
+
+    public RegistryObject<Item> getDeepslateCobbleBoots() {
+        return deepslateCobbleBoots;
+    }
+
+    public RegistryObject<Item> getNetherrackHelmet() {
+        return netherrackHelmet;
+    }
+
+    public RegistryObject<Item> getNetherrackChestplate() {
+        return netherrackChestplate;
+    }
+
+    public RegistryObject<Item> getNetherrackLeggings() {
+        return netherrackLeggings;
+    }
+
+    public RegistryObject<Item> getNetherrackBoots() {
+        return netherrackBoots;
     }
 }

@@ -1,8 +1,5 @@
 package dev.dekay.moredefaultarmor.util;
 
-import lombok.Getter;
-
-@Getter
 public enum ModMaterial {
 
     //overworld
@@ -24,5 +21,21 @@ public enum ModMaterial {
         this.enchantmentValue = enchantmentValue;
         this.toughness = toughness;
         this.knockbackResistance = knockbackResistance;
+    }
+
+    public int[] getProtectionAmounts() {
+        return protectionAmounts;
+    }
+
+    public int getEnchantmentValue() {
+        return enchantmentValue;
+    }
+
+    public float getToughness() {
+        return toughness;
+    }
+
+    public float getKnockbackResistance() {
+        return knockbackResistance;
     }
 }
