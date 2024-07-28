@@ -1,4 +1,4 @@
-package dev.dekay.moredefaultarmorforge.util;
+package dev.dekay.moredefaultarmor.util;
 
 import java.util.function.Supplier;
 
