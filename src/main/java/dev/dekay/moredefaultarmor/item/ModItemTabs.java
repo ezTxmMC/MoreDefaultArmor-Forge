@@ -21,6 +21,16 @@ public class ModItemTabs {
                 .title(Component.translatable("itemGroup.moredefaultarmor.overworld"))
                 .icon(() -> MoreDefaultArmor.getItems().getOakChestplate().get().getDefaultInstance())
                 .displayItems((parameters, output) -> {
+                    output.accept(MoreDefaultArmor.getItems().getDirtHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getDirtChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getDirtLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getDirtBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getCobblestoneHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getCobblestoneChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getCobblestoneLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getCobblestoneBoots().get());
+
                     output.accept(MoreDefaultArmor.getItems().getOakHelmet().get());
                     output.accept(MoreDefaultArmor.getItems().getOakChestplate().get());
                     output.accept(MoreDefaultArmor.getItems().getOakLeggings().get());
@@ -31,20 +41,10 @@ public class ModItemTabs {
                     output.accept(MoreDefaultArmor.getItems().getAndesiteLeggings().get());
                     output.accept(MoreDefaultArmor.getItems().getAndesiteBoots().get());
 
-                    output.accept(MoreDefaultArmor.getItems().getCobblestoneHelmet().get());
-                    output.accept(MoreDefaultArmor.getItems().getCobblestoneChestplate().get());
-                    output.accept(MoreDefaultArmor.getItems().getCobblestoneLeggings().get());
-                    output.accept(MoreDefaultArmor.getItems().getCobblestoneBoots().get());
-
                     output.accept(MoreDefaultArmor.getItems().getDioriteHelmet().get());
                     output.accept(MoreDefaultArmor.getItems().getDioriteChestplate().get());
                     output.accept(MoreDefaultArmor.getItems().getDioriteLeggings().get());
                     output.accept(MoreDefaultArmor.getItems().getDioriteBoots().get());
-
-                    output.accept(MoreDefaultArmor.getItems().getDirtHelmet().get());
-                    output.accept(MoreDefaultArmor.getItems().getDirtChestplate().get());
-                    output.accept(MoreDefaultArmor.getItems().getDirtLeggings().get());
-                    output.accept(MoreDefaultArmor.getItems().getDirtBoots().get());
 
                     output.accept(MoreDefaultArmor.getItems().getGraniteHelmet().get());
                     output.accept(MoreDefaultArmor.getItems().getGraniteChestplate().get());
