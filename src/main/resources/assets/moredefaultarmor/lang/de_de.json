@@ -1,0 +1,17 @@
+{
+  "itemGroup.moredefaultarmor.overworld": "MoreDefaultArmor - Overworld",
+  "itemGroup.moredefaultarmor.nether": "MoreDefaultArmor - Nether",
+  "itemGroup.moredefaultarmor.end": "MoreDefaultArmor - End",
+  "item.moredefaultarmor.dirt_helmet": "Erd Helm",
+  "item.moredefaultarmor.dirt_chestplate": "Erd Brustplatte",
+  "item.moredefaultarmor.dirt_leggings": "Erd Hose",
+  "item.moredefaultarmor.dirt_boots": "Erd Schuhe",
+  "item.moredefaultarmor.oak_helmet": "Eichen Helm",
+  "item.moredefaultarmor.oak_chestplate": "Eichen Brustplatte",
+  "item.moredefaultarmor.oak_leggings": "Eichen Hose",
+  "item.moredefaultarmor.oak_boots": "Eichen Schuhe",
+  "item.moredefaultarmor.cobblestone_helmet": "Bruchstein Helm",
+  "item.moredefaultarmor.cobblestone_chestplate": "Bruchstein Brustplatte",
+  "item.moredefaultarmor.cobblestone_leggings": "Bruchstein Hose",
+  "item.moredefaultarmor.cobblestone_boots": "Bruchstein Schuhe"
+}
