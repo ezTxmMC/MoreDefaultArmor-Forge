@@ -14,6 +14,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoreDefaultArmor.MODID);
 
+    //overworld
     private final RegistryObject<Item> dirtHelmet;
     private final RegistryObject<Item> dirtChestplate;
     private final RegistryObject<Item> dirtLeggings;
@@ -42,6 +43,14 @@ public class ModItems {
     private final RegistryObject<Item> deepslateCobbleChestplate;
     private final RegistryObject<Item> deepslateCobbleLeggings;
     private final RegistryObject<Item> deepslateCobbleBoots;
+
+    //nether
+    private final RegistryObject<Item> netherrackHelmet;
+    private final RegistryObject<Item> netherrackChestplate;
+    private final RegistryObject<Item> netherrackLeggings;
+    private final RegistryObject<Item> netherrackBoots;
+
+    //end
 
     public ModItems(IEventBus eventBus) {
         this.dirtHelmet = ITEMS.register("dirt_helmet", () -> new ArmorItem(ModArmorTiers.DIRT, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -78,7 +87,12 @@ public class ModItems {
         this.deepslateCobbleChestplate = ITEMS.register("deepslate_cobble_chestplate", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
         this.deepslateCobbleLeggings = ITEMS.register("deepslate_cobble_leggings", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         this.deepslateCobbleBoots = ITEMS.register("deepslate_cobble_boots", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.BOOTS, new Item.Properties()));
-        
+
+        this.netherrackHelmet = ITEMS.register("netherrack_helmet", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.netherrackChestplate = ITEMS.register("netherrack_chestplate", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.netherrackLeggings = ITEMS.register("netherrack_leggings", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.netherrackBoots = ITEMS.register("netherrack_boots", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.BOOTS, new Item.Properties()));
+
         ITEMS.register(eventBus);
     }
 }
