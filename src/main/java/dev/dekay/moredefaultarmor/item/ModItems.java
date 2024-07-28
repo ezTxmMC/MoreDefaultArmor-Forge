@@ -61,30 +61,30 @@ public class ModItems {
         this.oakLeggings = ITEMS.register("oak_leggings", () -> new ArmorItem(ModArmorTiers.OAK, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         this.oakBoots = ITEMS.register("oak_boots", () -> new ArmorItem(ModArmorTiers.OAK, ArmorItem.Type.BOOTS, new Item.Properties()));
         
-        this.cobblestoneHelmet = ITEMS.register("cobblestone_helmet", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.HELMET, new Item.Properties()));
-        this.cobblestoneChestplate = ITEMS.register("cobblestone_chestplate", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        this.cobblestoneLeggings = ITEMS.register("cobblestone_leggings", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        this.cobblestoneBoots = ITEMS.register("cobblestone_boots", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.BOOTS, new Item.Properties()));
+        this.cobblestoneHelmet = ITEMS.register("cobblestone_helmet", () -> new ArmorItem(ModArmorTiers.COBBLESTONE, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.cobblestoneChestplate = ITEMS.register("cobblestone_chestplate", () -> new ArmorItem(ModArmorTiers.COBBLESTONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.cobblestoneLeggings = ITEMS.register("cobblestone_leggings", () -> new ArmorItem(ModArmorTiers.COBBLESTONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.cobblestoneBoots = ITEMS.register("cobblestone_boots", () -> new ArmorItem(ModArmorTiers.COBBLESTONE, ArmorItem.Type.BOOTS, new Item.Properties()));
         
-        this.andesiteHelmet = ITEMS.register("andesite_helmet", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.HELMET, new Item.Properties()));
-        this.andesiteChestplate = ITEMS.register("andesite_chestplate", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        this.andesiteLeggings = ITEMS.register("andesite_leggings", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        this.andesiteBoots = ITEMS.register("andesite_boots", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.BOOTS, new Item.Properties()));
+        this.andesiteHelmet = ITEMS.register("andesite_helmet", () -> new ArmorItem(ModArmorTiers.ANDESITE, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.andesiteChestplate = ITEMS.register("andesite_chestplate", () -> new ArmorItem(ModArmorTiers.ANDESITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.andesiteLeggings = ITEMS.register("andesite_leggings", () -> new ArmorItem(ModArmorTiers.ANDESITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.andesiteBoots = ITEMS.register("andesite_boots", () -> new ArmorItem(ModArmorTiers.ANDESITE, ArmorItem.Type.BOOTS, new Item.Properties()));
         
-        this.dioriteHelmet = ITEMS.register("diorite_helmet", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.HELMET, new Item.Properties()));
-        this.dioriteChestplate = ITEMS.register("diorite_chestplate", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        this.dioriteLeggings = ITEMS.register("diorite_leggings", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        this.dioriteBoots = ITEMS.register("diorite_boots", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.BOOTS, new Item.Properties()));
+        this.dioriteHelmet = ITEMS.register("diorite_helmet", () -> new ArmorItem(ModArmorTiers.DIORITE, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.dioriteChestplate = ITEMS.register("diorite_chestplate", () -> new ArmorItem(ModArmorTiers.DIORITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.dioriteLeggings = ITEMS.register("diorite_leggings", () -> new ArmorItem(ModArmorTiers.DIORITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.dioriteBoots = ITEMS.register("diorite_boots", () -> new ArmorItem(ModArmorTiers.DIORITE, ArmorItem.Type.BOOTS, new Item.Properties()));
         
-        this.graniteHelmet = ITEMS.register("granite_helmet", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.HELMET, new Item.Properties()));
-        this.graniteChestplate = ITEMS.register("granite_chestplate", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        this.graniteLeggings = ITEMS.register("granite_leggings", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        this.graniteBoots = ITEMS.register("granite_boots", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.BOOTS, new Item.Properties()));
+        this.graniteHelmet = ITEMS.register("granite_helmet", () -> new ArmorItem(ModArmorTiers.GRANITE, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.graniteChestplate = ITEMS.register("granite_chestplate", () -> new ArmorItem(ModArmorTiers.GRANITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.graniteLeggings = ITEMS.register("granite_leggings", () -> new ArmorItem(ModArmorTiers.GRANITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.graniteBoots = ITEMS.register("granite_boots", () -> new ArmorItem(ModArmorTiers.GRANITE, ArmorItem.Type.BOOTS, new Item.Properties()));
         
-        this.deepslateCobbleHelmet = ITEMS.register("deepslate_cobble_helmet", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.HELMET, new Item.Properties()));
-        this.deepslateCobbleChestplate = ITEMS.register("deepslate_cobble_chestplate", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        this.deepslateCobbleLeggings = ITEMS.register("deepslate_cobble_leggings", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        this.deepslateCobbleBoots = ITEMS.register("deepslate_cobble_boots", () -> new ArmorItem(ModArmorTiers.STONE, ArmorItem.Type.BOOTS, new Item.Properties()));
+        this.deepslateCobbleHelmet = ITEMS.register("deepslate_cobble_helmet", () -> new ArmorItem(ModArmorTiers.DEEPSLATE_COBBLE, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.deepslateCobbleChestplate = ITEMS.register("deepslate_cobble_chestplate", () -> new ArmorItem(ModArmorTiers.DEEPSLATE_COBBLE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.deepslateCobbleLeggings = ITEMS.register("deepslate_cobble_leggings", () -> new ArmorItem(ModArmorTiers.DEEPSLATE_COBBLE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.deepslateCobbleBoots = ITEMS.register("deepslate_cobble_boots", () -> new ArmorItem(ModArmorTiers.DEEPSLATE_COBBLE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
         this.netherrackHelmet = ITEMS.register("netherrack_helmet", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.HELMET, new Item.Properties()));
         this.netherrackChestplate = ITEMS.register("netherrack_chestplate", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
