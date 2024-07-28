@@ -15,14 +15,20 @@ import java.util.function.Supplier;
 
 public enum ModArmorTiers implements ArmorMaterial {
 
-    //overworld
+    // Overworld
     DIRT("dirt", ModMaterial.DIRT, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.DIRT), new int[]{19, 28, 32, 25}),
     OAK("oak", ModMaterial.OAK, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.OAK_LOG), new int[]{45, 52, 55, 48}),
-    STONE("stone", ModMaterial.STONE, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.COBBLESTONE), new int[]{79, 84, 81, 68}),
+    COBBLESTONE("cobblestone", ModMaterial.STONE, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.COBBLESTONE), new int[]{79, 84, 81, 68}),
+    ANDESITE("andesite", ModMaterial.STONE, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.ANDESITE), new int[]{79, 84, 81, 68}),
+    DIORITE("diorite", ModMaterial.STONE, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.DIORITE), new int[]{79, 84, 81, 68}),
+    GRANITE("granite", ModMaterial.STONE, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.GRANITE), new int[]{79, 84, 81, 68}),
+    DEEPSLATE_COBBLE("deepslate_cobble", ModMaterial.STONE, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.COBBLED_DEEPSLATE), new int[]{79, 84, 81, 68}),
 
-    //nether
+    // Nether
     NETHERRACK("netherrack", ModMaterial.NETHERRACK, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.NETHERRACK), new int[]{19, 28, 32, 25});
-    //end
+
+    // End
+
 
     private final String name;
     private final int[] baseDurability;
