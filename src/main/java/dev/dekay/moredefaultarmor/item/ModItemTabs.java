@@ -29,7 +29,7 @@ public class ModItemTabs {
         );
         this.nether = CREATIVE_MODE_TABS.register("nether_tab", () -> CreativeModeTab.builder()
                 .title(Component.translatable("itemGroup.moredefaultarmor.nether"))
-                .icon(Items.BARRIER::getDefaultInstance)
+                .icon(() -> MoreDefaultArmor.getItems().getNetherrackChestplate().get().getDefaultInstance())
                 .displayItems((parameters, output) -> {
                     output.accept(MoreDefaultArmor.getItems().getNetherrackHelmet().get());
                     output.accept(MoreDefaultArmor.getItems().getNetherrackChestplate().get());
