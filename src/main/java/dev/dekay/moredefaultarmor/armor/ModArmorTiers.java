@@ -1,7 +1,7 @@
 package dev.dekay.moredefaultarmor.armor;
 
-import dev.dekay.moredefaultarmor.Config;
 import dev.dekay.moredefaultarmor.util.LazyValue;
+import dev.dekay.moredefaultarmor.util.ModMaterial;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
@@ -14,17 +14,17 @@ import java.util.function.Supplier;
 
 public enum ModArmorTiers implements ArmorMaterial {
 
-    DIRT("dirt", Config.DefaultMaterial.DIRT, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.DIRT), new int[]{19, 28, 32, 25}),
-    OAK("oak", Config.DefaultMaterial.OAK, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.OAK_LOG), new int[]{45, 52, 55, 48}),
-    STONE("stone", Config.DefaultMaterial.STONE, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.COBBLESTONE), new int[]{79, 84, 81, 68});
+    DIRT("dirt", ModMaterial.DIRT, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.DIRT), new int[]{19, 28, 32, 25}),
+    OAK("oak", ModMaterial.OAK, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.OAK_LOG), new int[]{45, 52, 55, 48}),
+    STONE("stone", ModMaterial.STONE, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.COBBLESTONE), new int[]{79, 84, 81, 68});
 
     private final String name;
     private final int[] baseDurability;
-    private final Config.DefaultMaterial material;
+    private final ModMaterial material;
     private final SoundEvent equipSound;
     private final LazyValue<Ingredient> repairMaterial;
 
-    ModArmorTiers(String name, Config.DefaultMaterial material, SoundEvent equipSound, Supplier<Ingredient> repairMaterial, int[] baseDurability) {
+    ModArmorTiers(String name, ModMaterial material, SoundEvent equipSound, Supplier<Ingredient> repairMaterial, int[] baseDurability) {
         this.name = name;
         this.material = material;
         this.baseDurability = baseDurability;
