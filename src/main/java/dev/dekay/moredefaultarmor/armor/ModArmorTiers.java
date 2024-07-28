@@ -1,5 +1,6 @@
 package dev.dekay.moredefaultarmor.armor;
 
+import dev.dekay.moredefaultarmor.MoreDefaultArmor;
 import dev.dekay.moredefaultarmor.util.LazyValue;
 import dev.dekay.moredefaultarmor.util.ModMaterial;
 import net.minecraft.sounds.SoundEvent;
@@ -64,7 +65,7 @@ public enum ModArmorTiers implements ArmorMaterial {
 
     @Override
     public @NotNull String getName() {
-        return this.name;
+        return MoreDefaultArmor.MODID + ":" + this.name;
     }
 
     @Override
