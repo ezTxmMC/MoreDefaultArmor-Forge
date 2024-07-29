@@ -59,6 +59,11 @@ public class ModItems {
     private final RegistryObject<Item> endStoneLeggings;
     private final RegistryObject<Item> endStoneBoots;
 
+    private final RegistryObject<Item> nyliumHelmet;
+    private final RegistryObject<Item> nyliumChestplate;
+    private final RegistryObject<Item> nyliumLeggings;
+    private final RegistryObject<Item> nyliumBoots;
+
     public ModItems(IEventBus eventBus) {
         this.dirtHelmet = ITEMS.register("dirt_helmet", () -> new ArmorItem(ModArmorTiers.DIRT, ArmorItem.Type.HELMET, new Item.Properties()));
         this.dirtChestplate = ITEMS.register("dirt_chestplate", () -> new ArmorItem(ModArmorTiers.DIRT, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
@@ -109,6 +114,11 @@ public class ModItems {
         this.smoothBasaltChestplate = ITEMS.register("smooth_basalt_chestplate", () -> new ArmorItem(ModArmorTiers.SMOOTH_BASALT, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
         this.smoothBasaltLeggings = ITEMS.register("smooth_basalt_leggings", () -> new ArmorItem(ModArmorTiers.SMOOTH_BASALT, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         this.smoothBasaltBoots = ITEMS.register("smooth_basalt_boots", () -> new ArmorItem(ModArmorTiers.SMOOTH_BASALT, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.nyliumHelmet = ITEMS.register("nylium_helmet", () -> new ArmorItem(ModArmorTiers.NYLIUM, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.nyliumChestplate = ITEMS.register("nylium_chestplate", () -> new ArmorItem(ModArmorTiers.NYLIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.nyliumLeggings = ITEMS.register("nylium_leggings", () -> new ArmorItem(ModArmorTiers.NYLIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.nyliumBoots = ITEMS.register("nylium_boots", () -> new ArmorItem(ModArmorTiers.NYLIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
 
         ITEMS.register(eventBus);
     }
@@ -268,5 +278,21 @@ public class ModItems {
     }
     public RegistryObject<Item> getSmoothBasaltBoots() {
         return smoothBasaltBoots;
+    }
+
+    public RegistryObject<Item> getNyliumHelmet() {
+        return nyliumHelmet;
+    }
+
+    public RegistryObject<Item> getNyliumChestplate() {
+        return nyliumChestplate;
+    }
+
+    public RegistryObject<Item> getNyliumLeggings() {
+        return nyliumLeggings;
+    }
+
+    public RegistryObject<Item> getNyliumBoots() {
+        return nyliumBoots;
     }
 }
