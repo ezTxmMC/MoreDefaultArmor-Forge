@@ -15,20 +15,15 @@ public class MoreDefaultArmor {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     private static ModItems items;
-    private static ModItemTabs itemTabs;
 
     public MoreDefaultArmor() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
         items = new ModItems(eventBus);
-        itemTabs = new ModItemTabs(eventBus);
+        new ModItemTabs(eventBus);
     }
 
     public static ModItems getItems() {
         return items;
-    }
-
-    public static ModItemTabs getItemTabs() {
-        return itemTabs;
     }
 }
