@@ -16,7 +16,7 @@ public class ModItemTabs {
     private final RegistryObject<CreativeModeTab> end;
 
     public ModItemTabs(IEventBus eventBus) {
-        this.overworld = CREATIVE_MODE_TABS.register("overworld_tab", () -> CreativeModeTab.builder()
+        this.overworld = CREATIVE_MODE_TABS.register("moredefaultarmor1overworldtab", () -> CreativeModeTab.builder()
                 .title(Component.translatable("itemGroup.moredefaultarmor.overworld"))
                 .icon(() -> MoreDefaultArmor.getItems().getOakChestplate().get().getDefaultInstance())
                 .displayItems((parameters, output) -> {
@@ -56,7 +56,7 @@ public class ModItemTabs {
                     output.accept(MoreDefaultArmor.getItems().getDeepslateCobbleBoots().get());
                 }).build()
         );
-        this.nether = CREATIVE_MODE_TABS.register("nether_tab", () -> CreativeModeTab.builder()
+        this.nether = CREATIVE_MODE_TABS.register("moredefaultarmor2nethertab", () -> CreativeModeTab.builder()
                 .title(Component.translatable("itemGroup.moredefaultarmor.nether"))
                 .icon(() -> MoreDefaultArmor.getItems().getNetherrackChestplate().get().getDefaultInstance())
                 .displayItems((parameters, output) -> {
@@ -66,7 +66,7 @@ public class ModItemTabs {
                     output.accept(MoreDefaultArmor.getItems().getNetherrackBoots().get());
                 }).build()
         );
-        this.end = CREATIVE_MODE_TABS.register("end_tab", () -> CreativeModeTab.builder()
+        this.end = CREATIVE_MODE_TABS.register("moredefaultarmor3endtab", () -> CreativeModeTab.builder()
                 .title(Component.translatable("itemGroup.moredefaultarmor.end"))
                 .icon(() -> MoreDefaultArmor.getItems().getEndStoneChestplate().get().getDefaultInstance())
                 .displayItems((parameters, output) -> {
