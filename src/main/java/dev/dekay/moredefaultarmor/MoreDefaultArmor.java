@@ -17,10 +17,18 @@ public class MoreDefaultArmor {
     private static ModItems items;
 
     public MoreDefaultArmor() {
+        LOGGER.info("Starting eventbus...");
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        LOGGER.info("Started eventbus.");
+        LOGGER.info("Register eventbus...");
         MinecraftForge.EVENT_BUS.register(this);
+        LOGGER.info("Registered eventbus.");
+        LOGGER.info("Register items...");
         items = new ModItems(eventBus);
+        LOGGER.info("Registered items.");
         new ModItemTabs(eventBus);
+        LOGGER.info("Register itemtabs...");
+        LOGGER.info("Registered itemtabs.");
     }
 
     public static ModItems getItems() {

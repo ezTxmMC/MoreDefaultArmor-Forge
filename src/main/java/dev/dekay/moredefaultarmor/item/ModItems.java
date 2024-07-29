@@ -12,7 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MoreDefaultArmor.MODID);
 
-    //overworld
+    // Overworld
     private final RegistryObject<Item> dirtHelmet;
     private final RegistryObject<Item> dirtChestplate;
     private final RegistryObject<Item> dirtLeggings;
@@ -42,17 +42,13 @@ public class ModItems {
     private final RegistryObject<Item> deepslateCobbleLeggings;
     private final RegistryObject<Item> deepslateCobbleBoots;
 
-    //nether
+    // Nether
     private final RegistryObject<Item> netherrackHelmet;
     private final RegistryObject<Item> netherrackChestplate;
     private final RegistryObject<Item> netherrackLeggings;
     private final RegistryObject<Item> netherrackBoots;
 
-    //end
-    private final RegistryObject<Item> endstoneHelmet;
-    private final RegistryObject<Item> endstoneChestplate;
-    private final RegistryObject<Item> endstoneLeggings;
-    private final RegistryObject<Item> endstoneBoots;
+    // End
 
     public ModItems(IEventBus eventBus) {
         this.dirtHelmet = ITEMS.register("dirt_helmet", () -> new ArmorItem(ModArmorTiers.DIRT, ArmorItem.Type.HELMET, new Item.Properties()));
