@@ -49,6 +49,10 @@ public class ModItems {
     private final RegistryObject<Item> netherrackBoots;
 
     // End
+    private final RegistryObject<Item> endstoneHelmet;
+    private final RegistryObject<Item> endstoneChestplate;
+    private final RegistryObject<Item> endstoneLeggings;
+    private final RegistryObject<Item> endstoneBoots;
 
     public ModItems(IEventBus eventBus) {
         this.dirtHelmet = ITEMS.register("dirt_helmet", () -> new ArmorItem(ModArmorTiers.DIRT, ArmorItem.Type.HELMET, new Item.Properties()));
