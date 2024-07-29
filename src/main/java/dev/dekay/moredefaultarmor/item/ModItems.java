@@ -49,10 +49,10 @@ public class ModItems {
     private final RegistryObject<Item> netherrackBoots;
 
     // End
-    private final RegistryObject<Item> endstoneHelmet;
-    private final RegistryObject<Item> endstoneChestplate;
-    private final RegistryObject<Item> endstoneLeggings;
-    private final RegistryObject<Item> endstoneBoots;
+    private final RegistryObject<Item> endStoneHelmet;
+    private final RegistryObject<Item> endStoneChestplate;
+    private final RegistryObject<Item> endStoneLeggings;
+    private final RegistryObject<Item> endStoneBoots;
 
     public ModItems(IEventBus eventBus) {
         this.dirtHelmet = ITEMS.register("dirt_helmet", () -> new ArmorItem(ModArmorTiers.DIRT, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -95,10 +95,10 @@ public class ModItems {
         this.netherrackLeggings = ITEMS.register("netherrack_leggings", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         this.netherrackBoots = ITEMS.register("netherrack_boots", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-        this.endstoneHelmet = ITEMS.register("endstone_helmet", () -> new ArmorItem(ModArmorTiers.ENDSTONE, ArmorItem.Type.HELMET, new Item.Properties()));
-        this.endstoneChestplate = ITEMS.register("endstone_chestplate", () -> new ArmorItem(ModArmorTiers.ENDSTONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
-        this.endstoneLeggings = ITEMS.register("endstone_leggings", () -> new ArmorItem(ModArmorTiers.ENDSTONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
-        this.endstoneBoots = ITEMS.register("endstone_boots", () -> new ArmorItem(ModArmorTiers.ENDSTONE, ArmorItem.Type.BOOTS, new Item.Properties()));
+        this.endStoneHelmet = ITEMS.register("end_stone_helmet", () -> new ArmorItem(ModArmorTiers.END_STONE, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.endStoneChestplate = ITEMS.register("end_stone_chestplate", () -> new ArmorItem(ModArmorTiers.END_STONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.endStoneLeggings = ITEMS.register("end_stone_leggings", () -> new ArmorItem(ModArmorTiers.END_STONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.endStoneBoots = ITEMS.register("end_stone_boots", () -> new ArmorItem(ModArmorTiers.END_STONE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
         ITEMS.register(eventBus);
     }
@@ -231,19 +231,19 @@ public class ModItems {
         return netherrackBoots;
     }
 
-    public RegistryObject<Item> getEndstoneHelmet() {
-        return  endstoneHelmet;
+    public RegistryObject<Item> getEndStoneHelmet() {
+        return endStoneHelmet;
     }
 
-    public RegistryObject<Item> getEndstoneChestplate() {
-        return  endstoneChestplate;
+    public RegistryObject<Item> getEndStoneChestplate() {
+        return endStoneChestplate;
     }
 
-    public RegistryObject<Item> getEndstoneLeggings() {
-        return  endstoneLeggings;
+    public RegistryObject<Item> getEndStoneLeggings() {
+        return endStoneLeggings;
     }
 
-    public RegistryObject<Item> getEndstoneBoots() {
-        return  endstoneBoots;
+    public RegistryObject<Item> getEndStoneBoots() {
+        return endStoneBoots;
     }
 }

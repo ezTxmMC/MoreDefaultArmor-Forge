@@ -28,7 +28,7 @@ public enum ModArmorTiers implements ArmorMaterial {
     NETHERRACK("netherrack", ModMaterial.NETHERRACK, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.NETHERRACK), new int[]{19, 28, 32, 25}),
 
     // End
-    ENDSTONE("endstone", ModMaterial.ENDSTONE, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.END_STONE), new int[]{79, 84, 81, 68});
+    END_STONE("end_stone", ModMaterial.END_STONE, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.END_STONE), new int[]{79, 84, 81, 68});
 
 
     private final String name;

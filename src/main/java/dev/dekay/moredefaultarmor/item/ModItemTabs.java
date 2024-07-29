@@ -4,7 +4,6 @@ import dev.dekay.moredefaultarmor.MoreDefaultArmor;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
@@ -64,26 +63,14 @@ public class ModItemTabs {
         );
         this.end = CREATIVE_MODE_TABS.register("end_tab", () -> CreativeModeTab.builder()
                 .title(Component.translatable("itemGroup.moredefaultarmor.end"))
-                .icon(Items.BARRIER::getDefaultInstance)
+                .icon(() -> MoreDefaultArmor.getItems().getEndStoneChestplate().get().getDefaultInstance())
                 .displayItems((parameters, output) -> {
-                    output.accept(MoreDefaultArmor.getItems().getEndstoneHelmet().get());
-                    output.accept(MoreDefaultArmor.getItems().getEndstoneChestplate().get());
-                    output.accept(MoreDefaultArmor.getItems().getEndstoneLeggings().get());
-                    output.accept(MoreDefaultArmor.getItems().getEndstoneBoots().get());
+                    output.accept(MoreDefaultArmor.getItems().getEndStoneHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getEndStoneChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getEndStoneLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getEndStoneBoots().get());
                 }).build()
         );
         CREATIVE_MODE_TABS.register(eventBus);
-    }
-
-    public RegistryObject<CreativeModeTab> getOverworld() {
-        return overworld;
-    }
-
-    public RegistryObject<CreativeModeTab> getNether() {
-        return nether;
-    }
-
-    public RegistryObject<CreativeModeTab> getEnd() {
-        return end;
     }
 }
