@@ -48,6 +48,11 @@ public class ModItems {
     private final RegistryObject<Item> netherrackLeggings;
     private final RegistryObject<Item> netherrackBoots;
 
+    private final RegistryObject<Item> smoothBasaltHelmet;
+    private final RegistryObject<Item> smoothBasaltChestplate;
+    private final RegistryObject<Item> smoothBasaltLeggings;
+    private final RegistryObject<Item> smoothBasaltBoots;
+
     // End
     private final RegistryObject<Item> endStoneHelmet;
     private final RegistryObject<Item> endStoneChestplate;
@@ -99,6 +104,11 @@ public class ModItems {
         this.endStoneChestplate = ITEMS.register("end_stone_chestplate", () -> new ArmorItem(ModArmorTiers.END_STONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
         this.endStoneLeggings = ITEMS.register("end_stone_leggings", () -> new ArmorItem(ModArmorTiers.END_STONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         this.endStoneBoots = ITEMS.register("end_stone_boots", () -> new ArmorItem(ModArmorTiers.END_STONE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.smoothBasaltHelmet = ITEMS.register("smooth_basalt_helmet", () -> new ArmorItem(ModArmorTiers.SMOOTH_BASALT, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.smoothBasaltChestplate = ITEMS.register("smooth_basalt_chestplate", () -> new ArmorItem(ModArmorTiers.SMOOTH_BASALT, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.smoothBasaltLeggings = ITEMS.register("smooth_basalt_leggings", () -> new ArmorItem(ModArmorTiers.SMOOTH_BASALT, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.smoothBasaltBoots = ITEMS.register("smooth_basalt_boots", () -> new ArmorItem(ModArmorTiers.SMOOTH_BASALT, ArmorItem.Type.BOOTS, new Item.Properties()));
 
         ITEMS.register(eventBus);
     }
@@ -245,5 +255,18 @@ public class ModItems {
 
     public RegistryObject<Item> getEndStoneBoots() {
         return endStoneBoots;
+    }
+
+    public RegistryObject<Item> getSmoothBasaltHelmet() {
+        return smoothBasaltHelmet;
+    }
+    public RegistryObject<Item> getSmoothBasaltChestplate() {
+        return smoothBasaltChestplate;
+    }
+    public RegistryObject<Item> getSmoothBasaltLeggings() {
+        return smoothBasaltLeggings;
+    }
+    public RegistryObject<Item> getSmoothBasaltBoots() {
+        return smoothBasaltBoots;
     }
 }

@@ -64,6 +64,11 @@ public class ModItemTabs {
                     output.accept(MoreDefaultArmor.getItems().getNetherrackChestplate().get());
                     output.accept(MoreDefaultArmor.getItems().getNetherrackLeggings().get());
                     output.accept(MoreDefaultArmor.getItems().getNetherrackBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getSmoothBasaltHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getSmoothBasaltChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getSmoothBasaltLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getSmoothBasaltBoots().get());
                 }).build()
         );
         this.end = CREATIVE_MODE_TABS.register("moredefaultarmor3endtab", () -> CreativeModeTab.builder()
