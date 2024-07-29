@@ -37,5 +37,6 @@
   "item.moredefaultarmor.end_stone_helmet": "End Stone Helmet",
   "item.moredefaultarmor.end_stone_chestplate": "End Stone Chestplate",
   "item.moredefaultarmor.end_stone_leggings": "End Stone Leggings",
-  "item.moredefaultarmor.end_stone_boots": "End Stone Boots"
+  "item.moredefaultarmor.end_stone_boots": "End Stone Boots",
+  "message.moredefaultarmor.update": "§6MoreDefaultArmor §8| §7There is a new update available: https://modrinth.com/mod/moredefaultarmor"
 }
