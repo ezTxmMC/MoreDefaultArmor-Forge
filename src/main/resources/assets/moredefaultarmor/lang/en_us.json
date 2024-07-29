@@ -29,5 +29,9 @@
   "item.moredefaultarmor.granite_helmet": "Granite Helmet",
   "item.moredefaultarmor.granite_chestplate": "Granite Chestplate",
   "item.moredefaultarmor.granite_leggings": "Granite Leggings",
-  "item.moredefaultarmor.granite_boots": "Granite Boots"
+  "item.moredefaultarmor.granite_boots": "Granite Boots",
+  "item.moredefaultarmor.endstone_helmet": "Endstone Helmet",
+  "item.moredefaultarmor.endstone_chestplate": "Endstone Chestplate",
+  "item.moredefaultarmor.endstone_leggings": "Endstone Leggings",
+  "item.moredefaultarmor.endstone_boots": "Endstone Boots"
 }

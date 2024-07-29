@@ -8,8 +8,9 @@ public enum ModMaterial {
     STONE(2, 3, 4, 1, 0, 0, 0),
 
     //nether
-    NETHERRACK(1, 1, 1, 1, 0, 0, 0);
+    NETHERRACK(1, 1, 1, 1, 0, 0, 0),
     //end
+    ENDSTONE(2, 3, 4, 1, 0, 0, 0);
 
     private final int[] protectionAmounts;
     private final int enchantmentValue;

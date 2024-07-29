@@ -66,7 +66,10 @@ public class ModItemTabs {
                 .title(Component.translatable("itemGroup.moredefaultarmor.end"))
                 .icon(Items.BARRIER::getDefaultInstance)
                 .displayItems((parameters, output) -> {
-
+                    output.accept(MoreDefaultArmor.getItems().getEndstoneHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getEndstoneChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getEndstoneLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getEndstoneBoots().get());
                 }).build()
         );
         CREATIVE_MODE_TABS.register(eventBus);

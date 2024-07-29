@@ -49,6 +49,10 @@ public class ModItems {
     private final RegistryObject<Item> netherrackBoots;
 
     //end
+    private final RegistryObject<Item> endstoneHelmet;
+    private final RegistryObject<Item> endstoneChestplate;
+    private final RegistryObject<Item> endstoneLeggings;
+    private final RegistryObject<Item> endstoneBoots;
 
     public ModItems(IEventBus eventBus) {
         this.dirtHelmet = ITEMS.register("dirt_helmet", () -> new ArmorItem(ModArmorTiers.DIRT, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -90,6 +94,11 @@ public class ModItems {
         this.netherrackChestplate = ITEMS.register("netherrack_chestplate", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
         this.netherrackLeggings = ITEMS.register("netherrack_leggings", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         this.netherrackBoots = ITEMS.register("netherrack_boots", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.endstoneHelmet = ITEMS.register("endstone_helmet", () -> new ArmorItem(ModArmorTiers.ENDSTONE, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.endstoneChestplate = ITEMS.register("endstone_chestplate", () -> new ArmorItem(ModArmorTiers.ENDSTONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.endstoneLeggings = ITEMS.register("endstone_leggings", () -> new ArmorItem(ModArmorTiers.ENDSTONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.endstoneBoots = ITEMS.register("endstone_boots", () -> new ArmorItem(ModArmorTiers.ENDSTONE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
         ITEMS.register(eventBus);
     }
@@ -220,5 +229,21 @@ public class ModItems {
 
     public RegistryObject<Item> getNetherrackBoots() {
         return netherrackBoots;
+    }
+
+    public RegistryObject<Item> getEndstoneHelmet() {
+        return  endstoneHelmet;
+    }
+
+    public RegistryObject<Item> getEndstoneChestplate() {
+        return  endstoneChestplate;
+    }
+
+    public RegistryObject<Item> getEndstoneLeggings() {
+        return  endstoneLeggings;
+    }
+
+    public RegistryObject<Item> getEndstoneBoots() {
+        return  endstoneBoots;
     }
 }
