@@ -54,6 +54,11 @@ public class ModItemTabs {
                     output.accept(MoreDefaultArmor.getItems().getDeepslateCobbleChestplate().get());
                     output.accept(MoreDefaultArmor.getItems().getDeepslateCobbleLeggings().get());
                     output.accept(MoreDefaultArmor.getItems().getDeepslateCobbleBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getPrismarineHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getPrismarineChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getPrismarineLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getPrismarineBoots().get());
                 }).build()
         );
         this.nether = CREATIVE_MODE_TABS.register("moredefaultarmor2nethertab", () -> CreativeModeTab.builder()

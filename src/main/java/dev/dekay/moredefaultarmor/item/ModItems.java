@@ -41,6 +41,10 @@ public class ModItems {
     private final RegistryObject<Item> deepslateCobbleChestplate;
     private final RegistryObject<Item> deepslateCobbleLeggings;
     private final RegistryObject<Item> deepslateCobbleBoots;
+    private final RegistryObject<Item> prismarineHelmet;
+    private final RegistryObject<Item> prismarineChestplate;
+    private final RegistryObject<Item> prismarineLeggings;
+    private final RegistryObject<Item> prismarineBoots;
 
     // Nether
     private final RegistryObject<Item> netherrackHelmet;
@@ -89,6 +93,11 @@ public class ModItems {
         this.deepslateCobbleChestplate = ITEMS.register("deepslate_cobble_chestplate", () -> new ArmorItem(ModArmorTiers.DEEPSLATE_COBBLE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
         this.deepslateCobbleLeggings = ITEMS.register("deepslate_cobble_leggings", () -> new ArmorItem(ModArmorTiers.DEEPSLATE_COBBLE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         this.deepslateCobbleBoots = ITEMS.register("deepslate_cobble_boots", () -> new ArmorItem(ModArmorTiers.DEEPSLATE_COBBLE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.prismarineHelmet = ITEMS.register("prismarine_helmet", () -> new ArmorItem(ModArmorTiers.PRISMARINE, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.prismarineChestplate = ITEMS.register("prismarine_chestplate", () -> new ArmorItem(ModArmorTiers.PRISMARINE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.prismarineLeggings = ITEMS.register("prismarine_leggings", () -> new ArmorItem(ModArmorTiers.PRISMARINE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.prismarineBoots = ITEMS.register("prismarine_boots", () -> new ArmorItem(ModArmorTiers.PRISMARINE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
         this.netherrackHelmet = ITEMS.register("netherrack_helmet", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.HELMET, new Item.Properties()));
         this.netherrackChestplate = ITEMS.register("netherrack_chestplate", () -> new ArmorItem(ModArmorTiers.NETHERRACK, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
@@ -213,6 +222,22 @@ public class ModItems {
 
     public RegistryObject<Item> getDeepslateCobbleBoots() {
         return deepslateCobbleBoots;
+    }
+
+    public RegistryObject<Item> getPrismarineHelmet() {
+        return prismarineHelmet;
+    }
+
+    public RegistryObject<Item> getPrismarineChestplate() {
+        return prismarineChestplate;
+    }
+
+    public RegistryObject<Item> getPrismarineLeggings() {
+        return prismarineLeggings;
+    }
+
+    public RegistryObject<Item> getPrismarineBoots() {
+        return prismarineBoots;
     }
 
     public RegistryObject<Item> getNetherrackHelmet() {
