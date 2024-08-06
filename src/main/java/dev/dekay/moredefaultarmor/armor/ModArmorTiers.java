@@ -30,6 +30,7 @@ public enum ModArmorTiers implements ArmorMaterial {
     NYLIUM("nylium", ModMaterial.NYLIUM, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.CRIMSON_NYLIUM), new int[]{22, 31, 35, 27}),
     NETHER_WART("nether_wart", ModMaterial.NETHER_WART, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.NETHER_WART_BLOCK), new int[]{34, 45, 39, 31}),
     NETHER_BRICK("nether_brick", ModMaterial.NETHER_BRICK, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.NETHER_BRICKS), new int[]{72, 77, 74, 61}),
+    WARPED("warped", ModMaterial.WARPED, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.WARPED_NYLIUM), new int[]{22, 31, 35, 27}),
 
     // End
     END_STONE("end_stone", ModMaterial.END_STONE, SoundEvents.ARMOR_EQUIP_LEATHER, () -> Ingredient.of(Items.END_STONE), new int[]{79, 84, 81, 68});

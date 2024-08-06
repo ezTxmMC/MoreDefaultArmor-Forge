@@ -68,6 +68,11 @@ public class ModItems {
     private final RegistryObject<Item> netherBrickLeggings;
     private final RegistryObject<Item> netherBrickBoots;
 
+    private final RegistryObject<Item> warpedHelmet;
+    private final RegistryObject<Item> warpedChestplate;
+    private final RegistryObject<Item> warpedLeggings;
+    private final RegistryObject<Item> warpedBoots;
+
     // End
     private final RegistryObject<Item> endStoneHelmet;
     private final RegistryObject<Item> endStoneChestplate;
@@ -139,6 +144,11 @@ public class ModItems {
         this.netherBrickChestplate = ITEMS.register("nether_brick_chestplate", () -> new ArmorItem(ModArmorTiers.NETHER_BRICK, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
         this.netherBrickLeggings = ITEMS.register("nether_brick_leggings", () -> new ArmorItem(ModArmorTiers.NETHER_BRICK, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         this.netherBrickBoots = ITEMS.register("nether_brick_boots", () -> new ArmorItem(ModArmorTiers.NETHER_BRICK, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.warpedHelmet = ITEMS.register("warped_helmet", () -> new ArmorItem(ModArmorTiers.WARPED, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.warpedChestplate = ITEMS.register("warped_chestplate", () -> new ArmorItem(ModArmorTiers.WARPED, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.warpedLeggings = ITEMS.register("warped_leggings", () -> new ArmorItem(ModArmorTiers.WARPED, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.warpedBoots = ITEMS.register("warped_boots", () -> new ArmorItem(ModArmorTiers.WARPED, ArmorItem.Type.BOOTS, new Item.Properties()));
 
         ITEMS.register(eventBus);
     }
@@ -349,5 +359,21 @@ public class ModItems {
 
     public RegistryObject<Item> getNetherBrickBoots() {
         return netherBrickBoots;
+    }
+
+    public RegistryObject<Item> getWarpedHelmet() {
+        return warpedHelmet;
+    }
+
+    public RegistryObject<Item> getWarpedChestplate() {
+        return warpedChestplate;
+    }
+
+    public RegistryObject<Item> getWarpedLeggings() {
+        return warpedLeggings;
+    }
+
+    public RegistryObject<Item> getWarpedBoots() {
+        return warpedBoots;
     }
 }

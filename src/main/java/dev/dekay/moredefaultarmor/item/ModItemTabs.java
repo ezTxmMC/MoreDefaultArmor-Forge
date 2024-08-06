@@ -84,6 +84,11 @@ public class ModItemTabs {
                     output.accept(MoreDefaultArmor.getItems().getNetherBrickChestplate().get());
                     output.accept(MoreDefaultArmor.getItems().getNetherBrickLeggings().get());
                     output.accept(MoreDefaultArmor.getItems().getNetherBrickBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getWarpedHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getWarpedChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getWarpedLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getWarpedBoots().get());
                 }).build()
         );
         this.end = CREATIVE_MODE_TABS.register("moredefaultarmor3endtab", () -> CreativeModeTab.builder()
