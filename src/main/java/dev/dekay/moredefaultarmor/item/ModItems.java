@@ -53,16 +53,21 @@ public class ModItems {
     private final RegistryObject<Item> smoothBasaltLeggings;
     private final RegistryObject<Item> smoothBasaltBoots;
 
+    private final RegistryObject<Item> nyliumHelmet;
+    private final RegistryObject<Item> nyliumChestplate;
+    private final RegistryObject<Item> nyliumLeggings;
+    private final RegistryObject<Item> nyliumBoots;
+
+    private final RegistryObject<Item> netherWartHelmet;
+    private final RegistryObject<Item> netherWartChestplate;
+    private final RegistryObject<Item> netherWartLeggings;
+    private final RegistryObject<Item> netherWartBoots;
+
     // End
     private final RegistryObject<Item> endStoneHelmet;
     private final RegistryObject<Item> endStoneChestplate;
     private final RegistryObject<Item> endStoneLeggings;
     private final RegistryObject<Item> endStoneBoots;
-
-    private final RegistryObject<Item> nyliumHelmet;
-    private final RegistryObject<Item> nyliumChestplate;
-    private final RegistryObject<Item> nyliumLeggings;
-    private final RegistryObject<Item> nyliumBoots;
 
     public ModItems(IEventBus eventBus) {
         this.dirtHelmet = ITEMS.register("dirt_helmet", () -> new ArmorItem(ModArmorTiers.DIRT, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -119,6 +124,11 @@ public class ModItems {
         this.nyliumChestplate = ITEMS.register("nylium_chestplate", () -> new ArmorItem(ModArmorTiers.NYLIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
         this.nyliumLeggings = ITEMS.register("nylium_leggings", () -> new ArmorItem(ModArmorTiers.NYLIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         this.nyliumBoots = ITEMS.register("nylium_boots", () -> new ArmorItem(ModArmorTiers.NYLIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.netherWartHelmet = ITEMS.register("nether_wart_helmet", () -> new ArmorItem(ModArmorTiers.NETHER_WART, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.netherWartChestplate = ITEMS.register("nether_wart_chestplate", () -> new ArmorItem(ModArmorTiers.NETHER_WART, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.netherWartLeggings = ITEMS.register("nether_wart_leggings", () -> new ArmorItem(ModArmorTiers.NETHER_WART, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.netherWartBoots = ITEMS.register("nether_wart_boots", () -> new ArmorItem(ModArmorTiers.NETHER_WART, ArmorItem.Type.BOOTS, new Item.Properties()));
 
         ITEMS.register(eventBus);
     }
@@ -251,31 +261,18 @@ public class ModItems {
         return netherrackBoots;
     }
 
-    public RegistryObject<Item> getEndStoneHelmet() {
-        return endStoneHelmet;
-    }
-
-    public RegistryObject<Item> getEndStoneChestplate() {
-        return endStoneChestplate;
-    }
-
-    public RegistryObject<Item> getEndStoneLeggings() {
-        return endStoneLeggings;
-    }
-
-    public RegistryObject<Item> getEndStoneBoots() {
-        return endStoneBoots;
-    }
-
     public RegistryObject<Item> getSmoothBasaltHelmet() {
         return smoothBasaltHelmet;
     }
+
     public RegistryObject<Item> getSmoothBasaltChestplate() {
         return smoothBasaltChestplate;
     }
+
     public RegistryObject<Item> getSmoothBasaltLeggings() {
         return smoothBasaltLeggings;
     }
+
     public RegistryObject<Item> getSmoothBasaltBoots() {
         return smoothBasaltBoots;
     }
@@ -294,5 +291,37 @@ public class ModItems {
 
     public RegistryObject<Item> getNyliumBoots() {
         return nyliumBoots;
+    }
+
+    public RegistryObject<Item> getNetherWartHelmet() {
+        return netherWartHelmet;
+    }
+
+    public RegistryObject<Item> getNetherWartChestplate() {
+        return netherWartChestplate;
+    }
+
+    public RegistryObject<Item> getNetherWartLeggings() {
+        return netherWartLeggings;
+    }
+
+    public RegistryObject<Item> getNetherWartBoots() {
+        return netherWartBoots;
+    }
+
+    public RegistryObject<Item> getEndStoneHelmet() {
+        return endStoneHelmet;
+    }
+
+    public RegistryObject<Item> getEndStoneChestplate() {
+        return endStoneChestplate;
+    }
+
+    public RegistryObject<Item> getEndStoneLeggings() {
+        return endStoneLeggings;
+    }
+
+    public RegistryObject<Item> getEndStoneBoots() {
+        return endStoneBoots;
     }
 }
