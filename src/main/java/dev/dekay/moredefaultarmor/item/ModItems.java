@@ -63,6 +63,11 @@ public class ModItems {
     private final RegistryObject<Item> netherWartLeggings;
     private final RegistryObject<Item> netherWartBoots;
 
+    private final RegistryObject<Item> netherBrickHelmet;
+    private final RegistryObject<Item> netherBrickChestplate;
+    private final RegistryObject<Item> netherBrickLeggings;
+    private final RegistryObject<Item> netherBrickBoots;
+
     // End
     private final RegistryObject<Item> endStoneHelmet;
     private final RegistryObject<Item> endStoneChestplate;
@@ -129,6 +134,11 @@ public class ModItems {
         this.netherWartChestplate = ITEMS.register("nether_wart_chestplate", () -> new ArmorItem(ModArmorTiers.NETHER_WART, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
         this.netherWartLeggings = ITEMS.register("nether_wart_leggings", () -> new ArmorItem(ModArmorTiers.NETHER_WART, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         this.netherWartBoots = ITEMS.register("nether_wart_boots", () -> new ArmorItem(ModArmorTiers.NETHER_WART, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.netherBrickHelmet = ITEMS.register("nether_brick_helmet", () -> new ArmorItem(ModArmorTiers.NETHER_BRICK, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.netherBrickChestplate = ITEMS.register("nether_brick_chestplate", () -> new ArmorItem(ModArmorTiers.NETHER_BRICK, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.netherBrickLeggings = ITEMS.register("nether_brick_leggings", () -> new ArmorItem(ModArmorTiers.NETHER_BRICK, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.netherBrickBoots = ITEMS.register("nether_brick_boots", () -> new ArmorItem(ModArmorTiers.NETHER_BRICK, ArmorItem.Type.BOOTS, new Item.Properties()));
 
         ITEMS.register(eventBus);
     }
@@ -323,5 +333,21 @@ public class ModItems {
 
     public RegistryObject<Item> getEndStoneBoots() {
         return endStoneBoots;
+    }
+
+    public RegistryObject<Item> getNetherBrickHelmet() {
+        return netherBrickHelmet;
+    }
+
+    public RegistryObject<Item> getNetherBrickChestplate() {
+        return netherBrickChestplate;
+    }
+
+    public RegistryObject<Item> getNetherBrickLeggings() {
+        return netherBrickLeggings;
+    }
+
+    public RegistryObject<Item> getNetherBrickBoots() {
+        return netherBrickBoots;
     }
 }
