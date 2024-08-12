@@ -48,6 +48,41 @@ public class ModItems {
     private final RegistryObject<Item> netherrackLeggings;
     private final RegistryObject<Item> netherrackBoots;
 
+    private final RegistryObject<Item> smoothBasaltHelmet;
+    private final RegistryObject<Item> smoothBasaltChestplate;
+    private final RegistryObject<Item> smoothBasaltLeggings;
+    private final RegistryObject<Item> smoothBasaltBoots;
+
+    private final RegistryObject<Item> nyliumHelmet;
+    private final RegistryObject<Item> nyliumChestplate;
+    private final RegistryObject<Item> nyliumLeggings;
+    private final RegistryObject<Item> nyliumBoots;
+
+    private final RegistryObject<Item> netherWartHelmet;
+    private final RegistryObject<Item> netherWartChestplate;
+    private final RegistryObject<Item> netherWartLeggings;
+    private final RegistryObject<Item> netherWartBoots;
+
+    private final RegistryObject<Item> netherBrickHelmet;
+    private final RegistryObject<Item> netherBrickChestplate;
+    private final RegistryObject<Item> netherBrickLeggings;
+    private final RegistryObject<Item> netherBrickBoots;
+
+    private final RegistryObject<Item> warpedHelmet;
+    private final RegistryObject<Item> warpedChestplate;
+    private final RegistryObject<Item> warpedLeggings;
+    private final RegistryObject<Item> warpedBoots;
+
+    private final RegistryObject<Item> netherQuartzHelmet;
+    private final RegistryObject<Item> netherQuartzChestplate;
+    private final RegistryObject<Item> netherQuartzLeggings;
+    private final RegistryObject<Item> netherQuartzBoots;
+
+    private final RegistryObject<Item> blackstoneHelmet;
+    private final RegistryObject<Item> blackstoneChestplate;
+    private final RegistryObject<Item> blackstoneLeggings;
+    private final RegistryObject<Item> blackstoneBoots;
+
     // End
     private final RegistryObject<Item> endStoneHelmet;
     private final RegistryObject<Item> endStoneChestplate;
@@ -99,6 +134,41 @@ public class ModItems {
         this.endStoneChestplate = ITEMS.register("end_stone_chestplate", () -> new ArmorItem(ModArmorTiers.END_STONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
         this.endStoneLeggings = ITEMS.register("end_stone_leggings", () -> new ArmorItem(ModArmorTiers.END_STONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
         this.endStoneBoots = ITEMS.register("end_stone_boots", () -> new ArmorItem(ModArmorTiers.END_STONE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.smoothBasaltHelmet = ITEMS.register("smooth_basalt_helmet", () -> new ArmorItem(ModArmorTiers.SMOOTH_BASALT, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.smoothBasaltChestplate = ITEMS.register("smooth_basalt_chestplate", () -> new ArmorItem(ModArmorTiers.SMOOTH_BASALT, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.smoothBasaltLeggings = ITEMS.register("smooth_basalt_leggings", () -> new ArmorItem(ModArmorTiers.SMOOTH_BASALT, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.smoothBasaltBoots = ITEMS.register("smooth_basalt_boots", () -> new ArmorItem(ModArmorTiers.SMOOTH_BASALT, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.nyliumHelmet = ITEMS.register("nylium_helmet", () -> new ArmorItem(ModArmorTiers.NYLIUM, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.nyliumChestplate = ITEMS.register("nylium_chestplate", () -> new ArmorItem(ModArmorTiers.NYLIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.nyliumLeggings = ITEMS.register("nylium_leggings", () -> new ArmorItem(ModArmorTiers.NYLIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.nyliumBoots = ITEMS.register("nylium_boots", () -> new ArmorItem(ModArmorTiers.NYLIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.netherWartHelmet = ITEMS.register("nether_wart_helmet", () -> new ArmorItem(ModArmorTiers.NETHER_WART, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.netherWartChestplate = ITEMS.register("nether_wart_chestplate", () -> new ArmorItem(ModArmorTiers.NETHER_WART, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.netherWartLeggings = ITEMS.register("nether_wart_leggings", () -> new ArmorItem(ModArmorTiers.NETHER_WART, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.netherWartBoots = ITEMS.register("nether_wart_boots", () -> new ArmorItem(ModArmorTiers.NETHER_WART, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.netherBrickHelmet = ITEMS.register("nether_brick_helmet", () -> new ArmorItem(ModArmorTiers.NETHER_BRICK, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.netherBrickChestplate = ITEMS.register("nether_brick_chestplate", () -> new ArmorItem(ModArmorTiers.NETHER_BRICK, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.netherBrickLeggings = ITEMS.register("nether_brick_leggings", () -> new ArmorItem(ModArmorTiers.NETHER_BRICK, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.netherBrickBoots = ITEMS.register("nether_brick_boots", () -> new ArmorItem(ModArmorTiers.NETHER_BRICK, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.warpedHelmet = ITEMS.register("warped_helmet", () -> new ArmorItem(ModArmorTiers.WARPED, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.warpedChestplate = ITEMS.register("warped_chestplate", () -> new ArmorItem(ModArmorTiers.WARPED, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.warpedLeggings = ITEMS.register("warped_leggings", () -> new ArmorItem(ModArmorTiers.WARPED, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.warpedBoots = ITEMS.register("warped_boots", () -> new ArmorItem(ModArmorTiers.WARPED, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.netherQuartzHelmet = ITEMS.register("nether_quartz_helmet", () -> new ArmorItem(ModArmorTiers.NETHER_QUARTZ, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.netherQuartzChestplate = ITEMS.register("nether_quartz_chestplate", () -> new ArmorItem(ModArmorTiers.NETHER_QUARTZ, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.netherQuartzLeggings = ITEMS.register("nether_quartz_leggings", () -> new ArmorItem(ModArmorTiers.NETHER_QUARTZ, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.netherQuartzBoots = ITEMS.register("nether_quartz_boots", () -> new ArmorItem(ModArmorTiers.NETHER_QUARTZ, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+        this.blackstoneHelmet = ITEMS.register("blackstone_helmet", () -> new ArmorItem(ModArmorTiers.BLACKSTONE, ArmorItem.Type.HELMET, new Item.Properties()));
+        this.blackstoneChestplate = ITEMS.register("blackstone_chestplate", () -> new ArmorItem(ModArmorTiers.BLACKSTONE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+        this.blackstoneLeggings = ITEMS.register("blackstone_leggings", () -> new ArmorItem(ModArmorTiers.BLACKSTONE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+        this.blackstoneBoots = ITEMS.register("blackstone_boots", () -> new ArmorItem(ModArmorTiers.BLACKSTONE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
         ITEMS.register(eventBus);
     }
@@ -231,6 +301,54 @@ public class ModItems {
         return netherrackBoots;
     }
 
+    public RegistryObject<Item> getSmoothBasaltHelmet() {
+        return smoothBasaltHelmet;
+    }
+
+    public RegistryObject<Item> getSmoothBasaltChestplate() {
+        return smoothBasaltChestplate;
+    }
+
+    public RegistryObject<Item> getSmoothBasaltLeggings() {
+        return smoothBasaltLeggings;
+    }
+
+    public RegistryObject<Item> getSmoothBasaltBoots() {
+        return smoothBasaltBoots;
+    }
+
+    public RegistryObject<Item> getNyliumHelmet() {
+        return nyliumHelmet;
+    }
+
+    public RegistryObject<Item> getNyliumChestplate() {
+        return nyliumChestplate;
+    }
+
+    public RegistryObject<Item> getNyliumLeggings() {
+        return nyliumLeggings;
+    }
+
+    public RegistryObject<Item> getNyliumBoots() {
+        return nyliumBoots;
+    }
+
+    public RegistryObject<Item> getNetherWartHelmet() {
+        return netherWartHelmet;
+    }
+
+    public RegistryObject<Item> getNetherWartChestplate() {
+        return netherWartChestplate;
+    }
+
+    public RegistryObject<Item> getNetherWartLeggings() {
+        return netherWartLeggings;
+    }
+
+    public RegistryObject<Item> getNetherWartBoots() {
+        return netherWartBoots;
+    }
+
     public RegistryObject<Item> getEndStoneHelmet() {
         return endStoneHelmet;
     }
@@ -245,5 +363,69 @@ public class ModItems {
 
     public RegistryObject<Item> getEndStoneBoots() {
         return endStoneBoots;
+    }
+
+    public RegistryObject<Item> getNetherBrickHelmet() {
+        return netherBrickHelmet;
+    }
+
+    public RegistryObject<Item> getNetherBrickChestplate() {
+        return netherBrickChestplate;
+    }
+
+    public RegistryObject<Item> getNetherBrickLeggings() {
+        return netherBrickLeggings;
+    }
+
+    public RegistryObject<Item> getNetherBrickBoots() {
+        return netherBrickBoots;
+    }
+
+    public RegistryObject<Item> getWarpedHelmet() {
+        return warpedHelmet;
+    }
+
+    public RegistryObject<Item> getWarpedChestplate() {
+        return warpedChestplate;
+    }
+
+    public RegistryObject<Item> getWarpedLeggings() {
+        return warpedLeggings;
+    }
+
+    public RegistryObject<Item> getWarpedBoots() {
+        return warpedBoots;
+    }
+
+    public RegistryObject<Item> getNetherQuartzHelmet() {
+        return netherQuartzHelmet;
+    }
+
+    public RegistryObject<Item> getNetherQuartzChestplate() {
+        return netherQuartzChestplate;
+    }
+
+    public RegistryObject<Item> getNetherQuartzLeggings() {
+        return netherQuartzLeggings;
+    }
+
+    public RegistryObject<Item> getNetherQuartzBoots() {
+        return netherQuartzBoots;
+    }
+
+    public RegistryObject<Item> getBlackstoneHelmet() {
+        return blackstoneHelmet;
+    }
+
+    public RegistryObject<Item> getBlackstoneChestplate() {
+        return blackstoneChestplate;
+    }
+
+    public RegistryObject<Item> getBlackstoneLeggings() {
+        return blackstoneLeggings;
+    }
+
+    public RegistryObject<Item> getBlackstoneBoots() {
+        return blackstoneBoots;
     }
 }

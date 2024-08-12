@@ -64,6 +64,41 @@ public class ModItemTabs {
                     output.accept(MoreDefaultArmor.getItems().getNetherrackChestplate().get());
                     output.accept(MoreDefaultArmor.getItems().getNetherrackLeggings().get());
                     output.accept(MoreDefaultArmor.getItems().getNetherrackBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getSmoothBasaltHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getSmoothBasaltChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getSmoothBasaltLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getSmoothBasaltBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getNyliumHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getNyliumChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getNyliumLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getNyliumBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getNetherWartHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherWartChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherWartLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherWartBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getNetherBrickHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherBrickChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherBrickLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherBrickBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getWarpedHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getWarpedChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getWarpedLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getWarpedBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getNetherQuartzHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherQuartzChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherQuartzLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherQuartzBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getBlackstoneHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getBlackstoneChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getBlackstoneLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getBlackstoneBoots().get());
                 }).build()
         );
         this.end = CREATIVE_MODE_TABS.register("moredefaultarmor3endtab", () -> CreativeModeTab.builder()
