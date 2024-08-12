@@ -89,6 +89,16 @@ public class ModItemTabs {
                     output.accept(MoreDefaultArmor.getItems().getWarpedChestplate().get());
                     output.accept(MoreDefaultArmor.getItems().getWarpedLeggings().get());
                     output.accept(MoreDefaultArmor.getItems().getWarpedBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getNetherQuartzHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherQuartzChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherQuartzLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getNetherQuartzBoots().get());
+
+                    output.accept(MoreDefaultArmor.getItems().getBlackstoneHelmet().get());
+                    output.accept(MoreDefaultArmor.getItems().getBlackstoneChestplate().get());
+                    output.accept(MoreDefaultArmor.getItems().getBlackstoneLeggings().get());
+                    output.accept(MoreDefaultArmor.getItems().getBlackstoneBoots().get());
                 }).build()
         );
         this.end = CREATIVE_MODE_TABS.register("moredefaultarmor3endtab", () -> CreativeModeTab.builder()
